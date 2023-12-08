@@ -1,0 +1,77 @@
+---
+import ProductCard from '../components/ProductCard.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTitle = "Organic Farming Products";
+
+import tomatoImage from '../assets/Tomato.jpeg';
+import potatoImage from '../assets/Potato.jpeg';
+import appleImage from '../assets/Apple.jpeg';
+import mangoImage from '../assets/Mango.jpeg';
+import grapesImage from '../assets/Grapes.jpeg';
+import bananaImage from '../assets/Banana.jpeg';
+import orangeImage from '../assets/Orange.jpeg';
+
+
+---
+
+<BaseLayout>
+  <h1>All Products</h1>
+  <section>
+  <h2>Organic Fruits</h2>
+  <div>
+    <ProductCard name="Apple" price="50" src={appleImage} alt="Tomato"/>
+    <ProductCard name="Mango" price="20" src={mangoImage} alt="Potato"/>
+    <ProductCard name="Grapes" price="50" src={grapesImage} alt="Tomato"/>
+    <ProductCard name="Banana" price="20" src={bananaImage} alt="Potato"/>
+    <!-- <ProductCard name="Pomegranate" price="50" src={pomegranateImage} alt="Tomato"/> -->
+    <ProductCard name="Orange" price="20" src={orangeImage} alt="Potato"/>
+    <!-- <ProductCard name="Papaya" price="50" src={papayaImage} alt="Tomato"/> -->
+    <ProductCard name="Musk Melon" price="20" src={potatoImage} alt="Potato"/>
+    <ProductCard name="Water Melon" price="50" src={tomatoImage} alt="Tomato"/>
+    <ProductCard name="Pear" price="20" src={potatoImage} alt="Potato"/>
+  </div>
+  </section>
+  <section>
+    <h2>Organic Vegetables</h2>
+    <div>
+      <ProductCard name="Tomato" price="50" src={tomatoImage} alt="Tomato"/>
+      <ProductCard name="Potato" price="20" src={potatoImage} alt="Potato"/>
+      <ProductCard name="Tomato" price="50" src={tomatoImage} alt="Tomato"/>
+      <ProductCard name="Potato" price="20" src={potatoImage} alt="Potato"/>
+      <ProductCard name="Tomato" price="50" src={tomatoImage} alt="Tomato"/>
+      <ProductCard name="Potato" price="20" src={potatoImage} alt="Potato"/>
+      <ProductCard name="Tomato" price="50" src={tomatoImage} alt="Tomato"/>
+      <ProductCard name="Potato" price="20" src={potatoImage} alt="Potato"/>
+      <ProductCard name="Tomato" price="50" src={tomatoImage} alt="Tomato"/>
+      <ProductCard name="Potato" price="20" src={potatoImage} alt="Potato"/>
+    </div>
+    </section>
+    <section>
+      <h2>Organic Dairy Products</h2>
+      <div>
+        <ProductCard name="Tomato" price="50" src={tomatoImage} alt="Tomato"/>
+        <ProductCard name="Potato" price="20" src={potatoImage} alt="Potato"/>
+        <ProductCard name="Tomato" price="50" src={tomatoImage} alt="Tomato"/>
+        <ProductCard name="Potato" price="20" src={potatoImage} alt="Potato"/>
+        <ProductCard name="Tomato" price="50" src={tomatoImage} alt="Tomato"/>
+        <ProductCard name="Potato" price="20" src={potatoImage} alt="Potato"/>
+        <ProductCard name="Tomato" price="50" src={tomatoImage} alt="Tomato"/>
+        <ProductCard name="Potato" price="20" src={potatoImage} alt="Potato"/>
+        <ProductCard name="Tomato" price="50" src={tomatoImage} alt="Tomato"/>
+        <ProductCard name="Potato" price="20" src={potatoImage} alt="Potato"/>
+      </div>
+      </section>
+
+</BaseLayout>
+
+<style>
+  section{
+    margin: 10px;
+    overflow-x: hidden;
+  }
+  section div{
+    display: flex;
+    overflow-x:scroll;
+  }
+
+</style>

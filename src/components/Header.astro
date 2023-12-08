@@ -1,0 +1,25 @@
+---
+import Hamburger from './Hamburger.astro';
+import Navigation from './Navigation.astro';
+---
+
+<header>
+    <nav>
+        <h1>Farmorg</h1>
+        <Navigation/>
+        <Hamburger/>
+    </nav>
+</header>
+
+<style>
+    nav{
+        display: flex;
+        justify-content:space-around;
+        text-align:center;
+    }
+    @media screen and (max-width: 636px) {
+        nav{
+            justify-content: space-between;
+        }
+    }
+</style>
