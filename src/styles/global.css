@@ -1,60 +1,102 @@
-/* nav styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color:darkgrey;
+}
+
 .hamburger {
-    padding-right: 20px;
-    cursor: pointer;
-  }
-  
-  .hamburger .line {
-    display: block;
-    width: 40px;
-    height: 5px;
-    margin-bottom: 10px;
-    background-color: #4c1d95;
-  }
-  
+  padding: 10px 20px 0;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 2px;
+  margin-bottom: 10px;
+  background-color: #000;
+}
+
+.nav-links {
+  width: 100%;
+  display: none;
+  position: static;
+  justify-content: space-around;
+}
+
+.nav-links a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 1rem; /* corrected */
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: darkgrey;
+  color: #ffffff;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  background: #000;
+  color: #ffffff;
+}
+
+.expanded {
+  display: unset;
+}
+
+.bottom-nav {
+  background-color: darkgrey;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 5%;
+  font-size: larger;
+}
+
+.bottom-nav a:hover,
+.bottom-nav a:focus {
+  background: #000;
+  color: #ffffff;
+  padding: 5px;
+}
+
+@media screen and (min-width: 850px) {
   .nav-links {
-    width: 100%;
-    background-color: #ffffff;
-    display: none;
-    margin: 0;
-    height: 10vh;
-  }
-  
-  .nav-links a {
+    margin-left: 5em;
     display: block;
-    text-align: center;
-    padding: 10px 0;
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-transform: uppercase;
+    position: static;
+    width: 100%;
+    background: none;
+    justify-content: space-between;
+    display: -webkit-box; /* add vendor prefix */
+    display: -webkit-flex; /* add vendor prefix */
+    display: -ms-flexbox; /* add vendor prefix */
   }
-  
-  .nav-links a:hover, a:focus {
-    background:#4c1d95;
-    color: #ffffff;
+
+  .nav-links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 25%;
   }
-  
-  .expanded {
-    display: unset;
+
+  .hamburger {
+    display: none;
   }
-  
-  @media screen and (min-width: 636px) {
-    .nav-links {
-      margin-left: 5em;
-      display: block;
-      position: static;
-      width: auto;
-      background: none;
-    }
-  
-    .nav-links a {
-      display: inline-block;
-      padding: 5px 10px;
-      border-radius: 25%;
-    }
-  
-    .hamburger {
-      display: none;
-    }
-  }
+}

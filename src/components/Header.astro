@@ -6,7 +6,7 @@ import Navigation from './Navigation.astro';
 <header>
     <nav>
         <h1>Farmorg</h1>
-        <Navigation/>
+        <Navigation />
         <Hamburger/>
     </nav>
 </header>
@@ -15,21 +15,26 @@ import Navigation from './Navigation.astro';
     nav{
         display: flex;
         justify-content:space-around;
-        align-items:center;
+        padding: 5px 10px;
+        margin: 0%;
+        text-align: center;
+        align-items: center;
     }
+
     header{
         padding: 0%;
         margin: 0%;
         height: 5vh;
-        text-align: center;
     }
 
-    @media screen and (max-width: 636px) {
+    @media screen and (max-width: 850px) {
         nav{
             justify-content: space-between;
+            align-items: start;
         }
         h1{
-            padding-right:20px;
+            padding-right:100px;
+            padding-left: 10px;
         }
     }
 </style>

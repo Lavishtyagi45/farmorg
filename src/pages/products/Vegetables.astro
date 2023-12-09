@@ -1,0 +1,28 @@
+---
+import ProductCard from "../../components/ProductCard.astro";
+
+import tomatoImage from '../../assets/Tomato.jpeg';
+import carrotImage from '../../assets/Carrot.jpeg';
+---
+<h2> Vegetables </h2>
+    <div>
+    <ProductCard 
+      title="Organic Carrot" 
+      description="Crunchy and sweet organic carrots." 
+      image={carrotImage}
+      price="$3.99/kg"
+    />
+    <ProductCard 
+      title="Organic Tomato" 
+      description="Fresh and healthy organic tomato." 
+      image={tomatoImage}
+      price="$4.99/kg"
+    />
+    </div>
+
+    <style>
+        div{
+       display: flex;
+       overflow-x:scroll;
+     }
+   </style>

@@ -1,0 +1,36 @@
+---
+import ProductCard from '../../components/ProductCard.astro';
+
+import appleImage from '../../assets/Apple.jpeg';
+import mangoImage from '../../assets/Mango.jpeg';
+import grapesImage from '../../assets/Grapes.jpeg';
+import bananaImage from '../../assets/Banana.jpeg';
+---
+<h2> Fruits </h2>
+<div>
+<ProductCard 
+  title="Organic Apple" 
+  description="Freshly picked organic apples from our farm." 
+  image={appleImage}
+  price="$5.99/kg"
+/>
+<ProductCard 
+  title="Organic Banana" 
+  description="Sweet and nutritious organic bananas." 
+  image={bananaImage}
+  price="$3.99/kg"
+/>
+<ProductCard 
+title="Organic Mango" 
+description="Juicy and delicious organic mangoes." 
+image={mangoImage}
+price="$4.99/kg"
+/>
+</div>
+
+<style>
+    div{
+   display: flex;
+   overflow-x:scroll;
+ }
+</style>
