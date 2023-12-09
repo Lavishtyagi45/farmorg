@@ -1,0 +1,25 @@
+---
+import ProductCard from '../components/ProductCard.astro';
+
+// import { Image } from 'astro:assets';
+
+import appleImage from '../assets/Apple.jpeg';
+import carrotImage from '../assets/Carrot.jpeg';
+import Milk from '../assets/Milk.jpeg';
+import Cheese from '../assets/Cheese.jpeg';
+
+---
+<h2>Featured Products:</h2>
+  <section>
+    <ProductCard title="Organic Apple" description="Freshly picked organic apples from our farm." image={appleImage}price="$5.99/kg" />
+    <ProductCard title="Organic Carrot" description="Crunchy and sweet organic carrots." image={carrotImage}price="$3.99/kg" />
+    <ProductCard title="Organic Milk" description="Fresh and pure organic milk." image={Milk}price="$6.99/litre" />
+    <ProductCard title="Organic Cheese" description="Delicious and nutritious organic cheese." image={Cheese}price="$7.99/500g" />
+  </section>
+
+  <style>
+    section{
+      display: flex;
+    overflow-x: auto;
+  }
+  </style>

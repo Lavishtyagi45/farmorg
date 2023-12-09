@@ -1,26 +1,26 @@
 ---
 import { Picture } from "astro:assets";
-const {name,price,src,alt}=Astro.props;
+const { title, description, image, price } = Astro.props;
 ---
-<div class="productcard">
-    <div>
-        <h3>{name}</h3>
-        <p>INR {price} per kg</p>
-    </div>
-    <Picture src={src} alt={alt} id="pic"/>
+<div>
+  <Picture src={image} alt={title}  id="Img"/>
+  <h3>{title}</h3>
+  <p>{description}</p>
+  <p>{price}</p>
+  <button>Add to Cart</button>
 </div>
 
 <style>
-    .productcard{
-        display: flex;
-        margin: 10px;
-        background-color: aliceblue;
-        padding: 10px;
-    }
-    #pic{
-        height: 100px;
-        width: 100px;
-        padding: 10px;
-        border-radius: 25%;
-    }
+     #Img{
+      height: 200px;
+      width:200px;
+      border-radius: 25%;
+     }
+
+     div{
+      padding: 10px;
+      margin:10px;
+      background-color:lightgrey;
+      border-radius: 2.5%;
+     }
 </style>

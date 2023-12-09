@@ -14,11 +14,10 @@
   
   .nav-links {
     width: 100%;
-    top: 5rem;
-    left: 48px;
     background-color: #ffffff;
     display: none;
     margin: 0;
+    height: 10vh;
   }
   
   .nav-links a {
@@ -51,7 +50,6 @@
   
     .nav-links a {
       display: inline-block;
-      margin: 20px;
       padding: 5px 10px;
       border-radius: 25%;
     }

@@ -10,6 +10,9 @@ import mangoImage from '../assets/Mango.jpeg';
 import grapesImage from '../assets/Grapes.jpeg';
 import bananaImage from '../assets/Banana.jpeg';
 import orangeImage from '../assets/Orange.jpeg';
+import carrotImage from '../assets/Carrot.jpeg';
+import Milk from '../assets/Milk.jpeg'; 
+import Cheese from '../assets/Cheese.jpeg';
 
 
 ---
@@ -17,50 +20,62 @@ import orangeImage from '../assets/Orange.jpeg';
 <BaseLayout>
   <h1>All Products</h1>
   <section>
-  <h2>Organic Fruits</h2>
-  <div>
-    <ProductCard name="Apple" price="50" src={appleImage} alt="Tomato"/>
-    <ProductCard name="Mango" price="20" src={mangoImage} alt="Potato"/>
-    <ProductCard name="Grapes" price="50" src={grapesImage} alt="Tomato"/>
-    <ProductCard name="Banana" price="20" src={bananaImage} alt="Potato"/>
-    <!-- <ProductCard name="Pomegranate" price="50" src={pomegranateImage} alt="Tomato"/> -->
-    <ProductCard name="Orange" price="20" src={orangeImage} alt="Potato"/>
-    <!-- <ProductCard name="Papaya" price="50" src={papayaImage} alt="Tomato"/> -->
-    <ProductCard name="Musk Melon" price="20" src={potatoImage} alt="Potato"/>
-    <ProductCard name="Water Melon" price="50" src={tomatoImage} alt="Tomato"/>
-    <ProductCard name="Pear" price="20" src={potatoImage} alt="Potato"/>
-  </div>
+    <h2> Fruits </h2>
+    <div>
+    <ProductCard 
+      title="Organic Apple" 
+      description="Freshly picked organic apples from our farm." 
+      image={appleImage}
+      price="$5.99/kg"
+    />
+    <ProductCard 
+      title="Organic Banana" 
+      description="Sweet and nutritious organic bananas." 
+      image={bananaImage}
+      price="$3.99/kg"
+    />
+    <ProductCard 
+    title="Organic Mango" 
+    description="Juicy and delicious organic mangoes." 
+    image={mangoImage}
+    price="$4.99/kg"
+    />
+    </div>
   </section>
   <section>
-    <h2>Organic Vegetables</h2>
+    <h2> Vegetables </h2>
     <div>
-      <ProductCard name="Tomato" price="50" src={tomatoImage} alt="Tomato"/>
-      <ProductCard name="Potato" price="20" src={potatoImage} alt="Potato"/>
-      <ProductCard name="Tomato" price="50" src={tomatoImage} alt="Tomato"/>
-      <ProductCard name="Potato" price="20" src={potatoImage} alt="Potato"/>
-      <ProductCard name="Tomato" price="50" src={tomatoImage} alt="Tomato"/>
-      <ProductCard name="Potato" price="20" src={potatoImage} alt="Potato"/>
-      <ProductCard name="Tomato" price="50" src={tomatoImage} alt="Tomato"/>
-      <ProductCard name="Potato" price="20" src={potatoImage} alt="Potato"/>
-      <ProductCard name="Tomato" price="50" src={tomatoImage} alt="Tomato"/>
-      <ProductCard name="Potato" price="20" src={potatoImage} alt="Potato"/>
+    <ProductCard 
+      title="Organic Carrot" 
+      description="Crunchy and sweet organic carrots." 
+      image={carrotImage}
+      price="$3.99/kg"
+    />
+    <ProductCard 
+      title="Organic Tomato" 
+      description="Fresh and healthy organic tomato." 
+      image={tomatoImage}
+      price="$4.99/kg"
+    />
     </div>
-    </section>
-    <section>
-      <h2>Organic Dairy Products</h2>
-      <div>
-        <ProductCard name="Tomato" price="50" src={tomatoImage} alt="Tomato"/>
-        <ProductCard name="Potato" price="20" src={potatoImage} alt="Potato"/>
-        <ProductCard name="Tomato" price="50" src={tomatoImage} alt="Tomato"/>
-        <ProductCard name="Potato" price="20" src={potatoImage} alt="Potato"/>
-        <ProductCard name="Tomato" price="50" src={tomatoImage} alt="Tomato"/>
-        <ProductCard name="Potato" price="20" src={potatoImage} alt="Potato"/>
-        <ProductCard name="Tomato" price="50" src={tomatoImage} alt="Tomato"/>
-        <ProductCard name="Potato" price="20" src={potatoImage} alt="Potato"/>
-        <ProductCard name="Tomato" price="50" src={tomatoImage} alt="Tomato"/>
-        <ProductCard name="Potato" price="20" src={potatoImage} alt="Potato"/>
-      </div>
-      </section>
+  </section>
+  <section>
+    <h2> Dairy Products </h2>
+    <div>
+    <ProductCard 
+      title="Organic Milk" 
+      description="Fresh and pure organic milk." 
+      image={Milk}
+      price="$6.99/litre"
+    />
+    <ProductCard 
+      title="Organic Cheese" 
+      description="Delicious and nutritious organic cheese." 
+      image={Cheese}
+      price="$7.99/500g"
+    />
+    </div>
+  </section>  
 
 </BaseLayout>
 

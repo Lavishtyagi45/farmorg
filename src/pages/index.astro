@@ -1,29 +1,25 @@
 ---
-import ProductCard from '../components/ProductCard.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+import FeaturedProduct from '../components/FeaturedProduct.astro';
+
+
 const pageTitle = "Farmorg";
 
-import bananaImage from '../assets/Banana.jpeg';
 ---
 <BaseLayout>
-  <section id="LandingPage">
-    <h2>Welcome to Farmorg</h2>
-    <p>Explore our range of organic farming products.</p>
-  </section>
-  <section>
-	<h2>Featured Products</h2>
-  <ProductCard name="Banana" price="20" src={bananaImage} alt="Banana"/>
-  </section>
+  <main>
+    <h1>Welcome to Farmorg</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+  </main>
+  <FeaturedProduct/>
+  
 </BaseLayout>
-
-<style>
-  #LandingPage{
-    padding: 5px;
-    height: 80vh;
-    background-image: url(/public/Landing.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-
+  
+  
+  <style>
+  main{
+    height: 90vh;
+    background-color: aliceblue;
   }
 </style>

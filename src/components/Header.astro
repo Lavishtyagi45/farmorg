@@ -15,11 +15,21 @@ import Navigation from './Navigation.astro';
     nav{
         display: flex;
         justify-content:space-around;
-        text-align:center;
+        align-items:center;
     }
+    header{
+        padding: 0%;
+        margin: 0%;
+        height: 5vh;
+        text-align: center;
+    }
+
     @media screen and (max-width: 636px) {
         nav{
             justify-content: space-between;
+        }
+        h1{
+            padding-right:20px;
         }
     }
 </style>
