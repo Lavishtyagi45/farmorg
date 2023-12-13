@@ -1,0 +1,29 @@
+---
+import ProductCard from '../../components/ProductCard.astro';
+import Rice from '../../assets/Rice.jpeg';
+import Wheat from '../../assets/Wheat.jpeg';
+---
+
+<h2> Cereals </h2>
+    <div>
+    <ProductCard 
+      title="Organic Rice" 
+      description="Healthy and nutritious Rice." 
+      image={Rice}
+      price="60 rupees/kg"
+    />
+    <ProductCard 
+      title="Organic wheat" 
+      description="Delicious and nutritious wheat ." 
+      image={Wheat}
+      price="20 rupees/kg"
+    />
+    </div>
+  
+
+    <style>
+        div{
+       display: flex;
+       overflow-x:scroll;
+     }
+   </style>

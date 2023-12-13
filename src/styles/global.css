@@ -5,12 +5,12 @@
 }
 
 body{
-  background-color:darkgrey;
+  background-color:#fff;
   margin-bottom: 10vh;
 }
 
 .hamburger {
-  padding: 10px 20px 0;
+  padding: 10px 10px 0;
   cursor: pointer;
 }
 
@@ -38,8 +38,7 @@ body{
   font-size: 1rem; /* corrected */
   font-weight: bold;
   text-transform: uppercase;
-  background-color: darkgrey;
-  color: #ffffff;
+  color: #000;
 }
 
 .nav-links a:hover,
@@ -53,30 +52,28 @@ body{
 }
 
 .bottom-nav {
-  background-color: darkgrey;
   padding: 10px;
   position: fixed;
   bottom: 0;
   width: 100%;
   display: flex;
   justify-content: space-around;
+  background-image: url(/public/main.webp);
+  background-color: aliceblue;
+  background-repeat:repeat-x;
+  background-position-x:left;
+  background-size: contain;
 }
 
 .bottom-nav a {
   text-decoration: none;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #000;
   padding: 5px;
   border-radius: 5%;
   font-size: larger;
 }
 
-.bottom-nav a:hover,
-.bottom-nav a:focus {
-  background: #000;
-  color: #ffffff;
-  padding: 5px;
-}
 
 @media screen and (min-width: 850px) {
   .nav-links {
@@ -86,15 +83,12 @@ body{
     width: 100%;
     background: none;
     justify-content: space-between;
-    display: -webkit-box; /* add vendor prefix */
-    display: -webkit-flex; /* add vendor prefix */
-    display: -ms-flexbox; /* add vendor prefix */
   }
 
   .nav-links a {
     display: inline-block;
     padding: 5px 10px;
-    border-radius: 25%;
+    border-radius:2%;
   }
 
   .hamburger {

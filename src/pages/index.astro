@@ -6,15 +6,15 @@ import FeaturedProduct from '../components/FeaturedProduct.astro';
 import Cateogry from '../components/Cateogry.astro';
 import TrendingToday from '../components/TrendingToday.astro';
 
-const pageTitle = "Farmorg";
+const pageTitle = "Green Harvest";
 
 ---
 <BaseLayout>
   <Header/>
   <section>
     <main>
-      <h1>Welcome to Farmorg</h1>
-      <p>Lorem ipsum dolor sit amet.</p>
+      <h1>Welcome to GreenHarvest</h1>
+      <!-- <p>Lorem ipsum dolor sit amet.</p> -->
     </main>
   </section>
   
@@ -34,20 +34,36 @@ const pageTitle = "Farmorg";
   
 <style>
   main{
-    height: 90vh;
-    background-color:lightgrey;
-    color:white;
+    height: 85vh;
+    color:black;
     text-align: center;
+    background-image: url(/public/Icon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
   }
+
   main h1{
+    align-items: center;
     padding-top: 30vh;
-    font-size:3.5rem;
+    font-size:1.8rem;
   }
   main p{
     font-size: x-large;
   }
 
   section{
-    padding: 10px;
+    padding:0;
+    box-sizing: border-box;
+    margin: 0;
   }
+
+  @media screen and (max-width: 850px) {
+  
+    main h1{
+      font-size: 1.25rem;
+    }
+  
+  }
+
 </style>
